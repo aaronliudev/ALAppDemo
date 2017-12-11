@@ -1,0 +1,23 @@
+//
+//  ALAppDemo-Prefix.pch
+//  ALAppDemo
+//
+//  Created by Alan on 2017/8/30.
+//  Copyright © 2017年 Alan. All rights reserved.
+//
+
+#ifndef ALAppDemo_Prefix_pch
+#define ALAppDemo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <YYKit/YYKit.h>
+
+#import "ALCommonMcros.h"
+#import "UINavigationItem+Category.h"
+#import "UIBarButtonItem+ALAdd.h"
+
+#endif /* ALAppDemo_Prefix_pch */

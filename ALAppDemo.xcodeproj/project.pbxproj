@@ -10,6 +10,11 @@
 		74979FEACCD666326F895FE3 /* libPods-ALAppDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4F3C0A2FB652929DEF858C /* libPods-ALAppDemoTests.a */; };
 		D732FBB1B29BFC7635A095D9 /* libPods-ALAppDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C56AAFAB1826348E237C306A /* libPods-ALAppDemoUITests.a */; };
 		E72F6AB25E0F4BAC84E7CD7E /* libPods-ALAppDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFAF7D36CC58E2D9F784911 /* libPods-ALAppDemo.a */; };
+		E76402B71FD0421B0084218F /* ALBarButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E76402B61FD0421B0084218F /* ALBarButtonView.m */; };
+		E76402BF1FD049F10084218F /* UINavigationItem+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E76402BE1FD049F00084218F /* UINavigationItem+Category.m */; };
+		E76402C41FD168AE0084218F /* ALBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E76402C31FD168AE0084218F /* ALBaseVC.m */; };
+		E78DE0DA1F5D166C00FEA5E1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78DE0D91F5D166C00FEA5E1 /* FirstViewController.m */; };
+		E78DE0E01F5D549700FEA5E1 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78DE0DF1F5D549700FEA5E1 /* SecViewController.m */; };
 		E7C643E31F540E0100A5F0E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C643E21F540E0100A5F0E8 /* main.m */; };
 		E7C643E61F540E0100A5F0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C643E51F540E0100A5F0E8 /* AppDelegate.m */; };
 		E7C643E91F540E0100A5F0E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C643E81F540E0100A5F0E8 /* ViewController.m */; };
@@ -18,6 +23,11 @@
 		E7C643F11F540E0100A5F0E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C643EF1F540E0100A5F0E8 /* LaunchScreen.storyboard */; };
 		E7C643FC1F540E0100A5F0E8 /* ALAppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C643FB1F540E0100A5F0E8 /* ALAppDemoTests.m */; };
 		E7C644071F540E0100A5F0E8 /* ALAppDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C644061F540E0100A5F0E8 /* ALAppDemoUITests.m */; };
+		E7C644321F56FAD300A5F0E8 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C644311F56FAD300A5F0E8 /* UIButton+BackgroundColor.m */; };
+		E7C644351F56FB2F00A5F0E8 /* UIControl+ALAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C644341F56FB2F00A5F0E8 /* UIControl+ALAdd.m */; };
+		E7C6443D1F56FB5C00A5F0E8 /* UIBarButtonItem+ALBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C644391F56FB5C00A5F0E8 /* UIBarButtonItem+ALBadge.m */; };
+		E7C6443E1F56FB5C00A5F0E8 /* UINavigationBar+ALScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C6443B1F56FB5C00A5F0E8 /* UINavigationBar+ALScrolling.m */; };
+		E7C644411F56FBFE00A5F0E8 /* UIBarButtonItem+ALAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C644401F56FBFE00A5F0E8 /* UIBarButtonItem+ALAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,17 @@
 		B18FA8CE5E85126E4040834C /* Pods-ALAppDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALAppDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALAppDemoUITests/Pods-ALAppDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BDFAF7D36CC58E2D9F784911 /* libPods-ALAppDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ALAppDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56AAFAB1826348E237C306A /* libPods-ALAppDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ALAppDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76402B51FD0421B0084218F /* ALBarButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALBarButtonView.h; sourceTree = "<group>"; };
+		E76402B61FD0421B0084218F /* ALBarButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALBarButtonView.m; sourceTree = "<group>"; };
+		E76402BD1FD049F00084218F /* UINavigationItem+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Category.h"; sourceTree = "<group>"; };
+		E76402BE1FD049F00084218F /* UINavigationItem+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Category.m"; sourceTree = "<group>"; };
+		E76402C01FD14A1A0084218F /* ALCommonMcros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALCommonMcros.h; sourceTree = "<group>"; };
+		E76402C21FD168AE0084218F /* ALBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBaseVC.h; sourceTree = "<group>"; };
+		E76402C31FD168AE0084218F /* ALBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALBaseVC.m; sourceTree = "<group>"; };
+		E78DE0D81F5D166C00FEA5E1 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		E78DE0D91F5D166C00FEA5E1 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		E78DE0DE1F5D549700FEA5E1 /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
+		E78DE0DF1F5D549700FEA5E1 /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
 		E7C643DE1F540E0100A5F0E8 /* ALAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C643E21F540E0100A5F0E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7C643E41F540E0100A5F0E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +84,17 @@
 		E7C644021F540E0100A5F0E8 /* ALAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C644061F540E0100A5F0E8 /* ALAppDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDemoUITests.m; sourceTree = "<group>"; };
 		E7C644081F540E0100A5F0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C644301F56FAD300A5F0E8 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
+		E7C644311F56FAD300A5F0E8 /* UIButton+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColor.m"; sourceTree = "<group>"; };
+		E7C644331F56FB2F00A5F0E8 /* UIControl+ALAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ALAdd.h"; sourceTree = "<group>"; };
+		E7C644341F56FB2F00A5F0E8 /* UIControl+ALAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ALAdd.m"; sourceTree = "<group>"; };
+		E7C644381F56FB5C00A5F0E8 /* UIBarButtonItem+ALBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ALBadge.h"; sourceTree = "<group>"; };
+		E7C644391F56FB5C00A5F0E8 /* UIBarButtonItem+ALBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ALBadge.m"; sourceTree = "<group>"; };
+		E7C6443A1F56FB5C00A5F0E8 /* UINavigationBar+ALScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ALScrolling.h"; sourceTree = "<group>"; };
+		E7C6443B1F56FB5C00A5F0E8 /* UINavigationBar+ALScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ALScrolling.m"; sourceTree = "<group>"; };
+		E7C6443F1F56FBFE00A5F0E8 /* UIBarButtonItem+ALAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ALAdd.h"; sourceTree = "<group>"; };
+		E7C644401F56FBFE00A5F0E8 /* UIBarButtonItem+ALAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ALAdd.m"; sourceTree = "<group>"; };
+		E7C644421F56FC7100A5F0E8 /* ALAppDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALAppDemo-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +148,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E76402BC1FD049F00084218F /* UINavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				E76402BD1FD049F00084218F /* UINavigationItem+Category.h */,
+				E76402BE1FD049F00084218F /* UINavigationItem+Category.m */,
+			);
+			path = UINavigationItem;
+			sourceTree = "<group>";
+		};
+		E76402C11FD168AE0084218F /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E76402C21FD168AE0084218F /* ALBaseVC.h */,
+				E76402C31FD168AE0084218F /* ALBaseVC.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		E7C643D51F540E0100A5F0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +191,15 @@
 		E7C643E01F540E0100A5F0E8 /* ALAppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E7C644201F56F64600A5F0E8 /* Base */,
 				E7C643E41F540E0100A5F0E8 /* AppDelegate.h */,
 				E7C643E51F540E0100A5F0E8 /* AppDelegate.m */,
 				E7C643E71F540E0100A5F0E8 /* ViewController.h */,
 				E7C643E81F540E0100A5F0E8 /* ViewController.m */,
+				E78DE0D81F5D166C00FEA5E1 /* FirstViewController.h */,
+				E78DE0D91F5D166C00FEA5E1 /* FirstViewController.m */,
+				E78DE0DE1F5D549700FEA5E1 /* SecViewController.h */,
+				E78DE0DF1F5D549700FEA5E1 /* SecViewController.m */,
 				E7C643EA1F540E0100A5F0E8 /* Main.storyboard */,
 				E7C643ED1F540E0100A5F0E8 /* Assets.xcassets */,
 				E7C643EF1F540E0100A5F0E8 /* LaunchScreen.storyboard */,
@@ -158,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				E7C643E21F540E0100A5F0E8 /* main.m */,
+				E7C644421F56FC7100A5F0E8 /* ALAppDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -178,6 +234,68 @@
 				E7C644081F540E0100A5F0E8 /* Info.plist */,
 			);
 			path = ALAppDemoUITests;
+			sourceTree = "<group>";
+		};
+		E7C644201F56F64600A5F0E8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E76402C01FD14A1A0084218F /* ALCommonMcros.h */,
+				E7C644211F56F66900A5F0E8 /* NSFoundation */,
+				E7C644221F56F66900A5F0E8 /* UIKit */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E7C644211F56F66900A5F0E8 /* NSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSFoundation;
+			sourceTree = "<group>";
+		};
+		E7C644221F56F66900A5F0E8 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E76402C11FD168AE0084218F /* UIViewController */,
+				E76402BC1FD049F00084218F /* UINavigationItem */,
+				E7C6442F1F56FAC400A5F0E8 /* UIButton */,
+				E7C6442A1F56F74000A5F0E8 /* UIControl */,
+				E7C644261F56F72400A5F0E8 /* UIBarButtonItem */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E7C644261F56F72400A5F0E8 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				E7C6443F1F56FBFE00A5F0E8 /* UIBarButtonItem+ALAdd.h */,
+				E7C644401F56FBFE00A5F0E8 /* UIBarButtonItem+ALAdd.m */,
+				E7C644381F56FB5C00A5F0E8 /* UIBarButtonItem+ALBadge.h */,
+				E7C644391F56FB5C00A5F0E8 /* UIBarButtonItem+ALBadge.m */,
+				E7C6443A1F56FB5C00A5F0E8 /* UINavigationBar+ALScrolling.h */,
+				E7C6443B1F56FB5C00A5F0E8 /* UINavigationBar+ALScrolling.m */,
+				E76402B51FD0421B0084218F /* ALBarButtonView.h */,
+				E76402B61FD0421B0084218F /* ALBarButtonView.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		E7C6442A1F56F74000A5F0E8 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				E7C644331F56FB2F00A5F0E8 /* UIControl+ALAdd.h */,
+				E7C644341F56FB2F00A5F0E8 /* UIControl+ALAdd.m */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		E7C6442F1F56FAC400A5F0E8 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				E7C644301F56FAD300A5F0E8 /* UIButton+BackgroundColor.h */,
+				E7C644311F56FAD300A5F0E8 /* UIButton+BackgroundColor.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,8 +581,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78DE0DA1F5D166C00FEA5E1 /* FirstViewController.m in Sources */,
 				E7C643E91F540E0100A5F0E8 /* ViewController.m in Sources */,
+				E7C6443E1F56FB5C00A5F0E8 /* UINavigationBar+ALScrolling.m in Sources */,
+				E7C644321F56FAD300A5F0E8 /* UIButton+BackgroundColor.m in Sources */,
+				E76402BF1FD049F10084218F /* UINavigationItem+Category.m in Sources */,
+				E78DE0E01F5D549700FEA5E1 /* SecViewController.m in Sources */,
 				E7C643E61F540E0100A5F0E8 /* AppDelegate.m in Sources */,
+				E7C644411F56FBFE00A5F0E8 /* UIBarButtonItem+ALAdd.m in Sources */,
+				E7C644351F56FB2F00A5F0E8 /* UIControl+ALAdd.m in Sources */,
+				E76402B71FD0421B0084218F /* ALBarButtonView.m in Sources */,
+				E76402C41FD168AE0084218F /* ALBaseVC.m in Sources */,
+				E7C6443D1F56FB5C00A5F0E8 /* UIBarButtonItem+ALBadge.m in Sources */,
 				E7C643E31F540E0100A5F0E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +744,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6DT5R33QWJ;
+				GCC_PREFIX_HEADER = "ALAppDemo/ALAppDemo-Prefix.pch";
 				INFOPLIST_FILE = ALAppDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -630,6 +759,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6DT5R33QWJ;
+				GCC_PREFIX_HEADER = "ALAppDemo/ALAppDemo-Prefix.pch";
 				INFOPLIST_FILE = ALAppDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
