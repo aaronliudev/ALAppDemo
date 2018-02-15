@@ -40,6 +40,12 @@
 
 - (void)btnClick
 {
+//    ALBaseVC *avc = [ALBaseVC new];
+//    UIViewController *avc = [UIViewController new];
+//    avc.view.backgroundColor = [UIColor whiteColor];
+//    [self.navigationController pushViewController:avc animated:YES];
+//    return;
+    
     SecViewController *firstVc = [SecViewController new];
     [self.navigationController pushViewController:firstVc animated:YES];
 }

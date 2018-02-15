@@ -16,6 +16,7 @@
 
 @implementation ALBaseVC
 
+//MARK: - Life Cycle
 - (instancetype)init
 {
     self = [super init];
@@ -25,12 +26,26 @@
     return self;
 }
 
+//MARK: - View Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"这是一个测试";
     
     [self setupBackBarButton];
-    
+    [self configPopGesture];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if (![self isNavigationBaseVc]) {
+        if (self.popGestureIsDisabled) {
+            [self disabledPopGesture];
+        }
+        else {
+            [self configPopGesture];
+        }
+    }
 }
 
 - (void)configDefaultValue
@@ -44,16 +59,29 @@
     self.navigationItem.leftBarButtonItem = backItem;
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//MARK: - Public Method
+- (void)hideBackBtn
+{
+    self.navigationItem.leftBarButtonItem = nil;
+    [self.navigationItem setHidesBackButton:YES];
 }
 
+//MARK: - Navigation list view
+- (BOOL)isNavigationBaseVc
+{
+    return self.navigationController && [[self.navigationController.viewControllers firstObject] isEqual:self];
+}
+
+- (BOOL)isNavigationTopVc
+{
+    return self.navigationController && [[self.navigationController.viewControllers lastObject] isEqual:self];
+}
+
+//MARK: - Handler Evnet
 - (void)leftBtnAction
 {
     if ([self isModal]) { // present
-        if([self.navigationController.viewControllers.firstObject isEqual:self]) { // 如果是rootVC，默认dismiss
+        if([self isNavigationBaseVc]) { // 如果是rootVC，默认dismiss
             [self dismissViewControllerAnimated:YES completion:^{}];
         } else { // 如果不是rootVC，默认返回
             [self.navigationController popViewControllerAnimated:YES];
@@ -63,11 +91,25 @@
     }
 }
 
+//MARK:- Private Method
+//MARK: - Pop Gesture
+- (void)configPopGesture
+{
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
+}
+
+- (void)disabledPopGesture
+{
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+}
+
 /// 返回按钮标题
 - (NSString *)leftBtnTitle
 {
     if ([self isModal]) { // present
-        if([self.navigationController.viewControllers.firstObject isEqual:self]) { // 如果是rootVC，默认显示取消
+        if([self isNavigationBaseVc]) { // 如果是rootVC，默认显示取消
             return @"取消";
         } else { // 如果不是rootVC，默认显示返回
             return @"返回";
@@ -85,22 +127,25 @@
 {
     if([self presentingViewController])
         return YES;
-    if([[[self navigationController] presentingViewController] presentedViewController] == [self navigationController])
+    else if([[[self navigationController] presentingViewController] presentedViewController] == [self navigationController])
         return YES;
-    if([[[self tabBarController] presentingViewController] isKindOfClass:[UITabBarController class]])
+    else if([[[self tabBarController] presentingViewController] isKindOfClass:[UITabBarController class]])
         return YES;
-    
     return NO;
 }
 
-- (void)hideBackBtn
+//MARK: - OVerride Method
+- (BOOL)shouldAutorotate
 {
-    self.navigationItem.leftBarButtonItem = nil;
-    [self.navigationItem setHidesBackButton:YES];
+    return NO;
 }
 
 //MARK: - Get Method
 
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end

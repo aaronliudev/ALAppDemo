@@ -8,6 +8,7 @@
 
 #import "SecViewController.h"
 #import "UIBarButtonItem+ALAdd.h"
+#import "FirstViewController.h"
 
 @interface SecViewController ()
 
@@ -19,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.popGestureIsDisabled = YES;
     self.view.backgroundColor = [UIColor orangeColor];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem rightBarButtonItemWithTitle:@"设置" block:^(id sender) {
@@ -58,6 +60,12 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"这是第%ld行",indexPath.row + 1];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FirstViewController *fvc = [FirstViewController new];
+    [self.navigationController pushViewController:fvc animated:YES];
 }
 
 - (UITableView *)tableView
