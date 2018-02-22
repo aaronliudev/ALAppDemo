@@ -29,7 +29,7 @@
 //MARK: - View Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"这是一个测试";
+    
     
     [self setupBackBarButton];
     [self configPopGesture];

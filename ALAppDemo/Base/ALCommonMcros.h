@@ -66,6 +66,7 @@ typedef id   (^IDBlock_id)  (id);
 #define KTopOffset                 8
 #define KRightOffset               12
 #define KBottomOffset              8
+#define SCREEN_SCALE [UIScreen mainScreen].scale
 #define AL_1PX_WIDTH (1 / [UIScreen mainScreen].scale)
 
 ///------

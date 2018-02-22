@@ -17,7 +17,10 @@
 #import <YYKit/YYKit.h>
 
 #import "ALCommonMcros.h"
-#import "UINavigationItem+Category.h"
+#import "ALBaseNavigationVC.h"
+#import "ALBaseVC.h"
+#import "UINavigationItem+ALCategory.h"
 #import "UIBarButtonItem+ALAdd.h"
+#import "NSObject+ALAdd.h"
 
 #endif /* ALAppDemo_Prefix_pch */

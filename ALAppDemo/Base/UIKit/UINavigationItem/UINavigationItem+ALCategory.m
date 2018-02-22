@@ -1,15 +1,15 @@
 //
-//  UINavigationItem+Category.m
+//  UINavigationItem+ALCategory.m
 //  Moments
 //
 //  Created by Alan on 2017/11/30.
 //  Copyright © 2017年 Alan. All rights reserved.
 //
 
-#import "UINavigationItem+Category.h"
+#import "UINavigationItem+ALCategory.h"
 #import "ALBarButtonView.h"
 
-@implementation UINavigationItem (Category)
+@implementation UINavigationItem (ALCategory)
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
 - (void)setLeftBarButtonItem:(UIBarButtonItem *)leftBarButtonItem

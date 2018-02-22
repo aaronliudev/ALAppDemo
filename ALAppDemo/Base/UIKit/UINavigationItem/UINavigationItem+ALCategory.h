@@ -1,5 +1,5 @@
 //
-//  UINavigationItem+Category.h
+//  UINavigationItem+ALCategory.h
 //  Moments
 //
 //  Created by Alan on 2017/11/30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UINavigationItem (Category)
+@interface UINavigationItem (ALCategory)
 
 @end
