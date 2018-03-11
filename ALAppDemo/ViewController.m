@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "FirstViewController.h"
+
 
 @interface ViewController ()
 
@@ -16,9 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)buttonClick:(id)sender
+{
+    FirstViewController *firstVc = [[FirstViewController alloc] init];
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:firstVc];
+    [self presentViewController:navc animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
